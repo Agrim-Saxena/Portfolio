@@ -42,3 +42,8 @@
         display: block;
     }
 }
+
+.anchor-link {
+    text-decoration: none;
+    color: #7e61e7;
+}

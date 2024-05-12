@@ -1,5 +1,6 @@
 import React from "react";
 import "./MobileNav.css";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const MobileNav = ({ isOpen , toggleMenu }) =>{
   return (
@@ -13,24 +14,29 @@ const MobileNav = ({ isOpen , toggleMenu }) =>{
 
             <ul>
                 <li>
-                    <a className="menu-item">Home</a>
+                <AnchorLink className="anchor-link" offset={50} href="#home"><p onClick={()=>MobileNav("home")}>Home</p> </AnchorLink>
+                    {/* <a className="menu-item">Home</a> */}
                 </li>
 
                 <li>
-                    <a className="menu-item">Skills</a>
+                <AnchorLink className="anchor-link" offset={50} href="#skills"><p onClick={()=>MobileNav("skills")}>Skills</p> </AnchorLink>
+                    {/* <a className="menu-item">Skills</a> */}
                 </li>
 
                 <li>
-                    <a className="menu-item">Work Experience</a>
+                <AnchorLink className="anchor-link" offset={50} href="#projects"><p onClick={()=>MobileNav("projects")}>Projects</p> </AnchorLink>
+                    {/* <a className="menu-item">Work Experience</a> */}
                 </li>
 
                 <li>
-                    <a className="menu-item">Contact Me</a>
+                <AnchorLink className="anchor-link" offset={50} href="#contact"><p onClick={()=>MobileNav("Contact Me")}>Contact Me</p> </AnchorLink>
+                    {/* <a className="menu-item">Contact Me</a> */}
                 </li>
                 
-                <button className="contact-btn" onClick={() => {}}>
+                <div className="contact-btn"><AnchorLink className="anchor-link" offset={50} href="#contact"><p onClick={()=>MobileNav("Contact Me")}>Hire Me</p></AnchorLink></div>
+                {/* <button className="contact-btn" onClick={() => {}}>
                     Hire Me
-                </button>
+                </button> */}
             </ul>
         </div>
     </div>
